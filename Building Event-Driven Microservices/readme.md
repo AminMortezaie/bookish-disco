@@ -42,7 +42,14 @@ Connections between bounded contexts should be loosely coupled, as changes made 
 
 ## Leveraging Domain Models and Bounded Contexts
 
-
+Every organization forms a single domain between itself and the outside world.
+Everyone working within the organization is operating to support the needs of its
+domain.
+<br/>
+This domain is broken down into subdomains—perhaps, for a technology-centric company, an Engineering department, a Sales department, and a Customer Support department. Each subdomain has its own requirements and duties and may itself be subdivided. This division process repeats until the subdomain models are granular and **actionable and can be translated into small and independent services by the implementing teams.** 
+Bounded contexts are established around these subdomains
+and form the basis for the creation of microservices.
+<br/>
 
 
 
