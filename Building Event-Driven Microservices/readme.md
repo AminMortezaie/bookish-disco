@@ -51,5 +51,20 @@ Bounded contexts are established around these subdomains
 and form the basis for the creation of microservices.
 <br/>
 
+## Aligning Bounded Contexts with Business Requirements
 
-
+Aligning bounded contexts on business requirements allows teams to make changes
+to microservice implementations in a loosely coupled and highly cohesive way. It pro‐
+vides a team with the autonomy to design and implement a solution for the specific
+business needs, which greatly reduces interteam dependencies and enables each team
+to focus strictly on its own requirements.
+<br/>
+Conversely, aligning microservices on technical requirements is problematic. This
+pattern is often seen in improperly designed synchronous point-to-point microservi‐
+ces and in traditional monolith-style computing systems where teams own specific
+technical layers of the application. The main issue with technological alignment is
+that it distributes the responsibility of fulfilling the business function across multiple
+bounded contexts, which may involve multiple teams with differing schedules and
+duties. Because no team is solely responsible for implementing a solution, each ser‐
+vice becomes coupled to another across both team and API boundaries, making
+changes difficult and expensive.
