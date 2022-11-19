@@ -20,4 +20,32 @@ used to describe only the application environment, including databases, applicat
 servers. When speaking of systems performance, however, we use full stack to mean the entire 
 software stack from the application down to metal (the hardware), including system libraries, 
 the kernel, and the hardware itself. Systems performance studies the full stack.
+
 ![](./fig1-1.png)
+<br/>
+
+Systems performance involves a variety of activities. The following is a list of activities that are 
+also ideal steps in the life cycle of a software project from conception through development to 
+production deployment.
+
+- Setting performance objectives and performance modeling for a future product.
+
+- Setting performance objectives and performance modeling for a future product.
+
+- Performance analysis of in-development products in a test environment.
+
+- Non-regression testing for new product versions.
+
+- Benchmarking product releases.
+
+- Proof-of-concept testing in the target production environment.
+
+- Performance tuning in production
+
+- Monitoring of running production software.
+
+- Performance analysis of production issues.
+
+- Incident reviews for production issues.
+
+- Performance tool development to enhance production analysis.
