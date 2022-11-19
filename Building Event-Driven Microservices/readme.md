@@ -30,7 +30,7 @@ These services consume events from input event streams; apply their specific bus
 This combination of event streams and microservices forms an interconnected graph
 of activity across a business organization. Traditional computer architectures, com‐
 posed of monoliths and intermonolith communications, have a similar graph struc‐
-ture. Both of these graphs are shown in Figure 1-1.
+ture. Both of these graphs are shown in *Figure 1-1*.
 
 ![](./fig1-1.png)
 
@@ -67,3 +67,16 @@ that it distributes the responsibility of fulfilling the business function acros
 bounded contexts, which may involve multiple teams with differing schedules and
 duties. Because no team is solely responsible for implementing a solution, each service becomes coupled to another across both team and API boundaries, making
 changes difficult and expensive.
+<br/>
+
+![](./fig1-2.png)
+
+*Figure 1-2* shows both scenarios: sole ownership on the left and cross-cutting ownership on the right. With sole ownership, the team is fully organized around the two independent business requirements (bounded contexts) and has complete control over its application code and the database layer. On the right, the teams have been organized via technical requirements, where the application layer is managed separate from the data layer. This creates explicit dependencies between the teams, as well as implicit dependencies between the business requirements.
+<br/>
+
+Modeling event-driven microservices architectures around business requirements is preferred, though there are tradeoffs with this approach.
+
+-  Code may be replicated a number of times, and many services may use similar data access patterns. Product developers may try to reduce repetition by sharing data sources with other products
+or by coupling on boundaries.
+
+**Hint: Keep loose coupling between bounded contexts, and focus on minimizing intercontext dependencies. This will allow bounded context implementations to change as necessary, without subsequently breaking many (or any) other systems.**
