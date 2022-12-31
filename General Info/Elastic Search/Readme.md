@@ -54,7 +54,7 @@ requirements.
 ## Stoping Elastic Search on Ubuntu
 You will need to 'kill' the running process. It is accomplished by sending a SIGTERM request to the process, which ends or terminates it. In order to initiate the shutdown process, you must first determine the process identifier (PID) for the Elasticsearch service you wish to terminate. Grep command can be used to locate processes easily.
 
-# Elastic Search Mapping
+## Elastic Search Mapping
 ElasticSearch mappings define how documents and their fields are indexed and stored in ElasticSearch databases or ElasticSearch DBs.This defines the types and formats of the fields that appear in the documents. It refers to indexing.
 <br/>
 
