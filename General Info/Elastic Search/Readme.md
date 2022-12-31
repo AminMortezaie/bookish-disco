@@ -43,3 +43,32 @@ requirements.
     - Nested: A JSON object that maintains a relationship between its subfields.
     - Flattened: An entire JSON object represented by a single field value.
     - Join: Establishes a parent/child relationship between documents within an index.
+
+- Structured and Spatial data types
+    - Range: Range types, like date_range, long_range float_range, double_range, and IP_range.
+    - Point: Arbitrary cartesian points.
+    - Geo_point: Longitude and latitude points
+    - Shape: Arbitrary cartesian geometries.
+    - Geo_shape: Complex shapes like polygons.
+
+## Stoping Elastic Search on Ubuntu
+You will need to 'kill' the running process. It is accomplished by sending a SIGTERM request to the process, which ends or terminates it. In order to initiate the shutdown process, you must first determine the process identifier (PID) for the Elasticsearch service you wish to terminate. Grep command can be used to locate processes easily.
+
+# Elastic Search Mapping
+ElasticSearch mappings define how documents and their fields are indexed and stored in ElasticSearch databases or ElasticSearch DBs.This defines the types and formats of the fields that appear in the documents. It refers to indexing.
+<br/>
+
+### Types of mapping
+- **Static mapping:** Users perform static mappings when they create an index. We use static mappings to define data types and indexes.
+
+- **Dynamic mapping:** Elasticsearch automatically creates dynamic mappings for the tables. The dynamic mapping of Elasticsearch comes in handy when we need to store extra attributes on documents. It is not always necessary to configure field names and types when indexing documents, as these will be created automatically by Elasticsearch based on any predefined rules.
+
+
+## Elastic Search Fuzzy Search
+With fuzzy search, you can find documents with terms similar to your search term based on a Levenshtein edit distance measure.
+- Change one character (box → fox)
+- Remove one character (black → lack)
+- Insert one character (sic → sick)
+- Transpose two adjacent characters (act → cat)
+
+Within a specific edit distance, the fuzzy query generates a list of all possible variations and expansions of the search term. After that, the query returns a list of all possible matches. The most relevant and exact matches appear near the top of the list.
