@@ -79,3 +79,28 @@ A cluster is a collection of connected nodes. If you run only one instance or no
 Clusters automatically reorganize themselves when nodes join or leave so the data is distributed evenly among all the nodes. Despite being fully functional, the cluster is at risk of data loss if it fails.
 
 ![](./elastic-cluster.png)
+
+# Node in Elastic Search
+You can think of a node as a single server that forms part of your cluster. Nodes are assigned roles that describe their responsibilities and operations. By default, every cluster node can handle HTTP and transport traffic. <br/>
+
+Communication between nodes is carried out via the transport layer, while REST clients utilize the HTTP layer. Nodes in a cluster are aware of each other and can forward client requests to the right node.
+
+# Document in Elastic Search
+The term "document" refers to a **unit of information that can be indexed.** Each index within Elasticsearch contains multiple documents. 
+<br/>
+
+For instance, you could have a document for every customer, another for every order, etc. These documents are written in JSON, which is a widely used format for internet data exchange. Documents are composed of fields, and each field has its own type of data. In a particular index, you can store as many documents as you wish.
+
+# Operations perform on a document
+- Indexing a document
+- Fetching documents
+- Updating documents
+- Deleting documents
+
+# Index in Elastic Search
+An index is a collection of documents that are somewhat similar in nature.
+<br/>
+As an example, you could have an index of customer data, another one of product catalogs, and another one of order data.  The name of an index (which must be all lowercase) serves as an identifier for the index when indexing, searching, updating, and deleting documents contained within it.<br/>
+*An index (plural: indices) can have one or more than one shards and replicas.*
+
+![](./index-layout.png)
