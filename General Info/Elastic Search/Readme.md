@@ -104,3 +104,12 @@ As an example, you could have an index of customer data, another one of product 
 *An index (plural: indices) can have one or more than one shards and replicas.*
 
 ![](./index-layout.png)
+
+# Shards and Replica in Elastic Search
+- Shard<br/>
+Elasticsearch crashes are often caused by large indexes.
+Due to the unlimited number of documents that can be stored on each index, an index may consume more disk space than the hosting server can provide. Indexing will begin to fail as
+soon as the index reaches this limit.
+<br/>
+As a solution to this problem, it is possible to divide or segment indexes horizontally into multiple pieces, also called shards. For an index, you can easily specify how many shards you want.
+
