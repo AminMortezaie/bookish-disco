@@ -28,3 +28,18 @@ requirements.
 - Send normalizied raw data to be indexed in Elastic search.
 - Users can run queries.
 - From Kibana,  users can create powerful visualizations of data, and visualize complex queries through interactive diagrams
+
+## Different Data Types in Elastic Search
+- Common data types
+    - Binary
+    - Boolean
+    - Keywords: The keyword family, which includes the keyword, constant keyword ,and wildcard.
+    - Numbers
+    - Dates
+    - Alias: Represents the alias of an existing field.
+
+- Objects and relational types
+    - Object: Represent a JSON object.
+    - Nested: A JSON object that maintains a relationship between its subfields.
+    - Flattened: An entire JSON object represented by a single field value.
+    - Join: Establishes a parent/child relationship between documents within an index.
