@@ -72,3 +72,10 @@ With fuzzy search, you can find documents with terms similar to your search term
 - Transpose two adjacent characters (act → cat)
 
 Within a specific edit distance, the fuzzy query generates a list of all possible variations and expansions of the search term. After that, the query returns a list of all possible matches. The most relevant and exact matches appear near the top of the list.
+
+# Clusters in Elastic Search
+A cluster is a collection of connected nodes. If you run only one instance or node of Elasticsearch, then you have a single-node cluster or a cluster of one node.<br/>
+
+Clusters automatically reorganize themselves when nodes join or leave so the data is distributed evenly among all the nodes. Despite being fully functional, the cluster is at risk of data loss if it fails.
+
+![](./elastic-cluster.png)
