@@ -4,7 +4,7 @@ Elasticsearch is a modern, distributed, and analytics search engine that is base
 
 As opposed to most NoSQL databases, Elasticsearch NoSQL focuses more on search capabilities and provides a rich HTTP RESTful API that allows for fast searches in near real-time.
 
-## Advantages of ElasticSearch
+# Advantages of ElasticSearch
 - **Elasticsearch is a fast search engine** <br/>
 Elasticsearch a good choice for time-sensitive use cases such as infrastructure monitoring and security analytics.
 
@@ -16,20 +16,20 @@ Elasticsearch stores or distributes documents across several containers called s
 Data can be collected and processed easily using Beats and
 Logstash before being indexed in Elasticsearch.Kibana provides UIs for quick access to log files, application performance monitoring (APM), and infrastructure metrics data.'
 
-## ElasticSearch Usecases
+# ElasticSearch Usecases
 Elasticsearch's speed and scalability as well as its ability to index different types of data make it ideal for a number of use cases. In addition to its high scalability, Elasticsearch also offers near-real-time search capabilities.<br/>
 
 it is typically the underlying technology for applications requiring complex search
 requirements.
 
-## How does Elastic Search work?
+# How does Elastic Search work?
 - Gathering raw data from log files, system metrics or web apps.
 - Normalizing and analyzing raw data.
 - Send normalizied raw data to be indexed in Elastic search.
 - Users can run queries.
 - From Kibana,  users can create powerful visualizations of data, and visualize complex queries through interactive diagrams
 
-## Different Data Types in Elastic Search
+# Different Data Types in Elastic Search
 - Common data types
     - Binary
     - Boolean
@@ -51,10 +51,10 @@ requirements.
     - Shape: Arbitrary cartesian geometries.
     - Geo_shape: Complex shapes like polygons.
 
-## Stoping Elastic Search on Ubuntu
+# Stoping Elastic Search on Ubuntu
 You will need to 'kill' the running process. It is accomplished by sending a SIGTERM request to the process, which ends or terminates it. In order to initiate the shutdown process, you must first determine the process identifier (PID) for the Elasticsearch service you wish to terminate. Grep command can be used to locate processes easily.
 
-## Elastic Search Mapping
+# Elastic Search Mapping
 ElasticSearch mappings define how documents and their fields are indexed and stored in ElasticSearch databases or ElasticSearch DBs.This defines the types and formats of the fields that appear in the documents. It refers to indexing.
 <br/>
 
@@ -64,7 +64,7 @@ ElasticSearch mappings define how documents and their fields are indexed and sto
 - **Dynamic mapping:** Elasticsearch automatically creates dynamic mappings for the tables. The dynamic mapping of Elasticsearch comes in handy when we need to store extra attributes on documents. It is not always necessary to configure field names and types when indexing documents, as these will be created automatically by Elasticsearch based on any predefined rules.
 
 
-## Elastic Search Fuzzy Search
+# Elastic Search Fuzzy Search
 With fuzzy search, you can find documents with terms similar to your search term based on a Levenshtein edit distance measure.
 - Change one character (box → fox)
 - Remove one character (black → lack)
