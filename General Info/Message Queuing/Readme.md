@@ -25,3 +25,8 @@ There is a middle-man or a message broker required for the MQs, and this is wher
 RabbitMQ is a lightweight message broker, which sends and receives messages. It is one of the most popular open-source message brokers, with tens of thousands of users. To address high-scale and high-availability needs, RabbitMQ may also be implemented in a distributed environment. <br/>
 
 Some of RabbitMQ’s alternatives are Apache Kafka, ActiveMQ, KubeMQ, IBM MQ, ZeroMQ, and much more.
+
+## Major terms of RabbitMQ
+- **Producing** is just the act of sending. A producer is a software that transmits messages.
+- **Queue** is referred to as a post box. Messages pass between RabbitMQ and your apps, but they can only be kept in queues. A queue is effectively a big message buffer that is often limited by the host’s RAM and disc space.
+- **Receiving and consuming** have comparable meanings. A consumer is a software that mostly waits for messages to arrive.
