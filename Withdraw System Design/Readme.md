@@ -9,3 +9,7 @@ Requirements:
 7. The **funds transfer component** transfers the specified amount from the user's account to the recipient's account.
 8. The **database component** updates the system's records to reflect the successful transaction.
 
+## Encryption Component
+The encryption component is responsible for securely encrypting the transaction to ensure its confidentiality and integrity. In the case of a P2P encryption, the encryption is applied end-to-end, meaning that the data is encrypted on the sender's system and decrypted on the recipient's system.
+### Using AES
+One of the best encryption algorithms that can be used for P2P transactions is the Advanced Encryption Standard (AES). AES is a symmetric encryption algorithm, meaning that the same key is used to encrypt and decrypt the data. This makes it well-suited for P2P transactions, where the sender and recipient both need access to the encryption key.
