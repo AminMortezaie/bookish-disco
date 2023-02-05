@@ -47,5 +47,10 @@ but Here's a general overview of the steps involved in broadcasting a transactio
 3. The component transmits the serialized transaction to the network, using a protocol such as TCP/IP.
 4. The component listens for confirmation of the transaction from the network.
 
-
+## Confirmation Component
+Here's a general overview of the steps involved in confirming a transaction:
+1. The component receives the broadcast transaction from the broadcast component.
+2. The component verifies the transaction by checking that it is properly signed, that the specified amount is within the allowed limits, and that the sender's account has sufficient funds to cover the specified amount.
+3. The component updates the user's account balance to reflect the transferred amount.
+4. The component broadcasts the updated account balance to the network to ensure that all nodes have a consistent view of the current state of the network.
 
