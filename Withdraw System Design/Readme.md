@@ -38,3 +38,14 @@ This may involve, for example, converting the specified amount into the appropri
 
 Once the transaction is broadcast to the network, it is processed and confirmed by the network's nodes, which ensure that the transaction is valid and that the sender's account has sufficient funds to cover the specified amount.
 
+## Broadcast Component
+This component is being processed in the network core, and there is no need to implement.
+
+but Here's a general overview of the steps involved in broadcasting a transaction:
+1. The component receives the signed transaction from the transaction generation component.
+2. The component serializes the transaction into a format that can be transmitted over the network, such as a binary or hexadecimal format.
+3. The component transmits the serialized transaction to the network, using a protocol such as TCP/IP.
+4. The component listens for confirmation of the transaction from the network.
+
+
+
