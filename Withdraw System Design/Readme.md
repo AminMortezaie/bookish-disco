@@ -33,3 +33,6 @@ For a withdrawal system, common input validation checks might include:
 3. The component signs the transaction with the user's private key (for RSA) to confirm the user's authorization for the transaction.
 4. The component broadcasts the transaction to the desire network.
 
+It's important to note that the transaction generation component is responsible for ensuring that the transaction is created in accordance with the desire network's standards and protocols.
+This may involve, for example, converting the specified amount into the appropriate units and formatting the transaction data in a specific way.
+
