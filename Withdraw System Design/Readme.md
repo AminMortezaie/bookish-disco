@@ -54,3 +54,11 @@ Here's a general overview of the steps involved in confirming a transaction:
 3. The component updates the user's account balance to reflect the transferred amount.
 4. The component broadcasts the updated account balance to the network to ensure that all nodes have a consistent view of the current state of the network.
 
+It's important to ensure that the confirmation component implements appropriate security measures to prevent unauthorized transactions and to protect the integrity of the network's ledger.
+This may involve, for example, using encryption to secure the account information and implementing access control mechanisms to ensure that only authorized users and systems can modify the account balances.
+
+It's also important to ensure that the confirmation component is highly available and scalable, to ensure that transactions can be confirmed quickly and reliably, even in the event of high demand or network congestion. 
+
+## Strategies for low latency and high availability in Confirmation
+The component may implement strategies such as load balancing, failover, and replication to ensure that it can handle a high volume of transactions while maintaining low latency and high availability.
+
