@@ -26,3 +26,10 @@ For a withdrawal system, common input validation checks might include:
 3. Verifying that the encryption information provided by the user is valid and sufficient to securely encrypt the transaction.
 4. Verifying that the user's account has sufficient funds to cover the specified withdrawal amount.
 
+## Transaction Generation Component
+
+1. The component gathers the required information from the user, including the amount to be withdrawn, the recipient's blockchain address, and any encryption information provided.
+2. The component creates a transaction object that specifies the transfer of funds from the user's account to the recipient's blockchain address.
+3. The component signs the transaction with the user's private key(For RSA) to confirm the user's authorization for the transaction.
+4. The component broadcasts the transaction to the desire network.
+
