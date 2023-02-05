@@ -59,6 +59,6 @@ This may involve, for example, using encryption to secure the account informatio
 
 It's also important to ensure that the confirmation component is highly available and scalable, to ensure that transactions can be confirmed quickly and reliably, even in the event of high demand or network congestion. 
 
-## Strategies for low latency and high availability in Confirmation
+### Strategies for low latency and high availability in Confirmation
 The component may implement strategies such as load balancing, failover, and replication to ensure that it can handle a high volume of transactions while maintaining low latency and high availability.
 
