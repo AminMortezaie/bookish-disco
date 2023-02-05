@@ -36,3 +36,5 @@ For a withdrawal system, common input validation checks might include:
 It's important to note that the transaction generation component is responsible for ensuring that the transaction is created in accordance with the desire network's standards and protocols.
 This may involve, for example, converting the specified amount into the appropriate units and formatting the transaction data in a specific way.
 
+Once the transaction is broadcast to the network, it is processed and confirmed by the network's nodes, which ensure that the transaction is valid and that the sender's account has sufficient funds to cover the specified amount.
+
